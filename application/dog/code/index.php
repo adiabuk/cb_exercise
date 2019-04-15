@@ -1,6 +1,8 @@
 <?php
 
-if ($_SERVER['REQUEST_URI'] == "/show") {
+//if ($_SERVER['REQUEST_URI'] == "/show") {
+if(strpos($_SERVER['REQUEST_URI'], '/show') === 0) {
+
 echo <<<EOF
 <html>
   <head>
